@@ -7,7 +7,7 @@ gunzip Refs_14_04_11.fasta.one.fa.dup.gz
 3. Put all VITCOMIC2 local files in the current directory
 4. If input files are fastq,
 
-```
+```bash
 vi VITCOMIC2LocalFASTQ.sh
 for i in *.fastq;do
 sed '/^@[A-Z][A-Z0-9]/!d;s//>/;N' "$i" > "$i".fa
@@ -20,7 +20,7 @@ done
 ```
 
 5. If input files are fasta,
-```
+```bash
 vi VITCOMIC2LocalFASTA.sh
 for i in *.fasta;do
 awk '!/^>/ { printf "%s", $0; n = "\n" } /^>/ { print n $0; n = "" } END { printf "%s", n }' "$i" > "$i".one.fa
