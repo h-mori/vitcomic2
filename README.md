@@ -41,3 +41,21 @@ perl PileupGenera.pl "$i".one.fa.mapseq.parsed
 perl MimicCluster.pl "$i".one.fa.mapseq.parsed.genus.txt Refs_14_04_11.SPlist.Pro.txt
 done
 ```
+
+For quality filtering example,
+download and install fastp https://github.com/OpenGene/fastp
+download and install bwa https://sourceforge.net/projects/bio-bwa/files/
+
+Quality filtering example:
+
+```bash
+for i in *.fastq;do
+bwa index -a bwtsw phiX174.fasta
+bwa mem phiX174.fasta $i> $i.sam
+perl RemovePhiHu.pl $i $i.sam
+fastp -i $i.rem.fastq -o $i.rem2.fastq -G -3 -n 1 -l 90 -w 1 -x
+fastp -i $i.rem2.fastq -o $i.rem3.fastq -G -3 -n 1 -l 90 -w 1 -a ATGCCGTCTTCTGCTTG
+fastp -i $i.rem3.fastq -o $i.rem4.fastq -G -3 -n 1 -l 90 -w 1 -a GAGACTAAGGCGAATCTCGT
+fastp -i $i.rem4.fastq -o $i.rem5.fastq -G -3 -n 1 -l 90 -w 1 -a CTGTCTCTTATACACATCTC
+done
+```bash
