@@ -15,7 +15,7 @@ my ($input, $output, $counter, $temp, $divless, $seqname) = 0;
 $input = $ARGV[0];
 open(INPUT, "$input") or die "Can't open \"$input\"\n";
 
-$output = "$input.fasta";
+$output = "$input.fa";
 open(OUTPUT, ">$output") or die "Can't open \"$output\"\n";
 
 $counter = 0;
