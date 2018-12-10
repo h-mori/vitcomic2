@@ -4,7 +4,7 @@ The stand-alone version of VITCOMIC2 (http://vitcomic.org/).
 1. download and install MAPseq from https://github.com/jfmrod/MAPseq
 2. gunzip
 gunzip Refs_14_04_11.fasta.one.fa.dup.gz
-3. Put all VITCOMIC2 local files in the current directory
+3. Put all VITCOMIC2 local files and a MAPseq binary file symbolic link in the current directory
 4. If input files are fastq,
 
 ```bash
