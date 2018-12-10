@@ -22,8 +22,13 @@ Please be careful, above sed command is not perfect.
 In some fastq files, this code will cause problems.
 If your fastq files are derived from INSDC DRA/ERA/SRA, 
 replace above sed line to
+```bash
 sed '/^[DES]RR[0-9]/!d;s//>/;N' "$i" > "$i".fa
-
+```
+Otherwise, you can use
+```bash
+perl FASTQFASTA.pl "$i"
+```
 
 5. If input files are fasta,
 ```bash
