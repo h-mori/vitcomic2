@@ -18,6 +18,12 @@ perl PileupGenera.pl "$i".fa.one.fa.mapseq.parsed
 perl MimicCluster.pl "$i".fa.one.fa.mapseq.parsed.genus.txt Refs_14_04_11.SPlist.Pro.txt
 done
 ```
+Please be careful, above sed command is not perfect.
+In some fastq files, this code will cause problems.
+If your fastq files are derived from INSDC DRA/ERA/SRA, 
+replace above sed line to
+sed '/^[DES]RR[0-9]/!d;s//>/;N' "$i" > "$i".fa
+
 
 5. If input files are fasta,
 ```bash
