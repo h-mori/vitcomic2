@@ -1,4 +1,4 @@
-# vitcomic2
+# vitcomic2 local
 The stand-alone version of VITCOMIC2 (http://vitcomic.org/).
 
 1. download and install MAPseq from https://github.com/jfmrod/MAPseq
