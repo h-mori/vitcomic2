@@ -10,9 +10,9 @@ download and install bwa https://sourceforge.net/projects/bio-bwa/files/
 Quality filtering example:
 
 ```bash
+bwa index -a bwtsw phiX174.fasta
 vi QFtest.sh
 for i in *.fastq;do
-bwa index -a bwtsw phiX174.fasta
 bwa mem phiX174.fasta $i> $i.sam
 perl RemovePhiHu.pl $i $i.sam
 fastp -i $i.rem.fastq -o $i.rem2.fastq -G -3 -n 1 -l 90 -w 1 -x
