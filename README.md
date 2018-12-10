@@ -20,7 +20,7 @@ fastp -i $i.rem2.fastq -o $i.rem3.fastq -G -3 -n 1 -l 90 -w 1 -a ATGCCGTCTTCTGCT
 fastp -i $i.rem3.fastq -o $i.rem4.fastq -G -3 -n 1 -l 90 -w 1 -a GAGACTAAGGCGAATCTCGT
 fastp -i $i.rem4.fastq -o $i.rem5.fastq -G -3 -n 1 -l 90 -w 1 -a CTGTCTCTTATACACATCTC
 done
-```bash
+```
 
 After that, conduct VITCOMIC2.
 
