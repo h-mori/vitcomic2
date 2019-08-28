@@ -29,6 +29,9 @@ After that, conduct VITCOMIC2.
 2. gunzip
 
 Or you can use MAPseq binary file in the VITCOMIC2 repository.
+```bash
+chmod a+rwx mapseq
+```
 
 gunzip Refs_14_04_11.fasta.one.fa.dup.gz
 3. Put all VITCOMIC2 local files and a MAPseq binary file symbolic link in the current directory
