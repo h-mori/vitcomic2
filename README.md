@@ -27,6 +27,7 @@ After that, conduct VITCOMIC2.
 
 1. download and install MAPseq from https://github.com/jfmrod/MAPseq
 2. gunzip
+
 Or you can use MAPseq binary file in the VITCOMIC2 repository.
 
 gunzip Refs_14_04_11.fasta.one.fa.dup.gz
