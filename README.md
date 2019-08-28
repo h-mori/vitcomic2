@@ -30,6 +30,7 @@ After that, conduct VITCOMIC2.
 
 Or you can use MAPseq binary file in the VITCOMIC2 repository.
 ```bash
+gunzip mapseq.gz
 chmod a+rwx mapseq
 ```
 
