@@ -9,7 +9,7 @@ download and install bwa https://sourceforge.net/projects/bio-bwa/files/
 
 download and install seqkit https://github.com/shenwei356/seqkit
 
-Lazy way to conduct VITCOMIC2
+## Lazy way to conduct VITCOMIC2
 
 Download a tar.gz file from http://palaeo.nig.ac.jp/Resources/VITCOMIC/
 This file contains all of required files from VITCOMIC2 execution.
