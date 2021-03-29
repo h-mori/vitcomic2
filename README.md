@@ -12,10 +12,11 @@ download and install seqkit https://github.com/shenwei356/seqkit
 ## Lazy way to conduct VITCOMIC2
 
 Download a tar.gz file from http://palaeo.nig.ac.jp/Resources/VITCOMIC/
+
 This file contains all of required files from VITCOMIC2 execution.
 
 WorkFlow is
-fastp --> seqkit --> mapseq 
+# fastp --> seqkit --> mapseq 
 
 Put all VITCOMIC2 local files and a MAPseq binary file, a fastp binary file, a seqkit binary file symbolic links in the working directory.
 Then, conduct a shell script.
